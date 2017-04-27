@@ -6,6 +6,10 @@
 	    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel= "stylesheet"> 
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	    <script src="https://use.fontawesome.com/08e2600aff.js"></script>
+	    <!-- Magnific Popup core CSS file -->
+		<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+		<!-- Magnific Popup core JS file -->
+		<script src="magnific-popup/jquery.magnific-popup.js"></script>
 	    <link href='style.css' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
 
@@ -29,8 +33,32 @@
 			<div class="jumbotron">
 				<h1>American Bento</h1>
 				<p>Bringing homecooked meals to the Global Teaching Fellows of Tokyo International University.</p>
-				<div class="button"><a href="#" class="btn-medium">Order</a></div>
-			</div>
+				<div class="button"><a href='#test-form' class="btn-medium popup-with-form" >Order</a></div>
+					<form id="test-form" class="white-popup-block mfp-hide" _lpchecked="1">
+						<h1>Form</h1>
+						<fieldset style="border:0;">
+							<ol>
+								<li>
+									<label for="name">Name</label>
+									<input id="name" name="name" type="text" placeholder="Name" required="">
+								</li>
+								<li>
+									<label for="email">Email</label>
+									<input id="email" name="email" type="email" placeholder="example@domain.com" required="">
+								</li>
+								<li>
+									<label for="phone">Phone</label>
+									<input id="phone" name="phone" type="tel" placeholder="Eg. +447500000000" required="">
+								</li>
+								<li>
+									<label for="textarea">Textarea</label><br>
+									<textarea id="textarea">Try to resize me to see how popup CSS-based resizing works.</textarea>
+								</li>
+							</ol>
+						</fieldset>
+					</form>
+  			</div>
+  		
 		
 			<div class="feature">
 			<h2>This Week's Menu</h2>
