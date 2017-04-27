@@ -1,0 +1,131 @@
+body{
+	background-color: #5E4C5A;
+	color:#F2F2F2;
+}
+h1, h2, h3, h4{
+	font-family: "Poppins", sans-serif;
+}
+p, li {
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+nav i{
+	display: block;
+}
+.navbar{
+	background-color: #AED4E6;
+	height: 75px;
+}
+#bars{
+	margin-top: 10px;
+	cursor: default;
+}
+#mail{
+	margin-top: -35px;
+}
+
+.bars-dropdown{
+	font-size: 18px;
+	box-shadow: none;
+}
+.bars-dropdown li{
+	padding: 10px;
+	margin-top: 8px;
+}
+
+.jumbotron{
+	background:linear-gradient(135deg,rgba(0,0,0,.8) 0%, rgba(0,0,0,.3) 50%), url("assets/jumbo.jpeg")no-repeat center center;
+	height: 800px;
+	width: auto;
+	margin: 20px 20px;
+
+}
+.jumbotron h1{
+	font-size: 144px;
+	font-weight: bold;
+	text-align: center;
+	display: block;
+	text-shadow: 2px 2px black;
+	margin: 0 auto;
+	vertical-align: middle;
+	position: relative;
+	display: block;
+	width: 100%;
+	margin-top: 200px;
+
+}
+.jumbotron p{
+	text-align: center;
+	padding: 15px 0px;
+	text-shadow: 1px 1px black;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	width: 90%;
+}
+
+.btn-medium{
+	color:#F2F2F2;
+	border: 2px solid #F2F2F2;
+	border-radius: 50px;
+	padding: 10px 20px;
+	text-decoration: none;
+	opacity: 0.9;
+	text-align: center;
+	position: relative;
+	width: 15%;
+	margin: 0 auto;
+	display: block;
+	margin-top: 30px;	
+	font-size: 20px;
+}
+.btn-medium:hover{
+	border: 3px solid #F2F2F2;
+	text-decoration: none;
+	font-weight: bold;
+	color: #F2F2F2;
+}
+
+
+.tabs{
+	display: flex;
+}
+.feature h2{
+	text-align: center;
+	font-weight: bolder;
+	font-size: 55px;
+	text-shadow: 2px 2px black;
+	padding: 20px 0;
+}
+.tabs h4{
+	font-size: 45px;
+	margin-bottom: 15px;
+	font-weight: bolder;
+}
+.tabs li{
+	font-size:16px;
+	padding: 10px;
+	font-weight: lighter;
+}
+.tabs-item{
+	flex: 1 0 auto;
+	text-align: center;
+	color: white;
+	height: 300px;
+	margin: 10px;
+	width: 150px;
+}
+.active{
+	box-shadow: 0 0 10px #AED4E6;
+}
+#mon-day{
+	background: linear-gradient(135deg,rgba(0,0,0,.8) 0%, rgba(0,0,0,.3) 50%), url("assets/monday.jpg") no-repeat center center; 
+}
+#wed-day{
+	background:linear-gradient(135deg,rgba(0,0,0,.8) 0%, rgba(0,0,0,.3) 50%), url("assets/wednesday.jpeg") no-repeat center center; 
+}
+
+#fri-day{
+	background:linear-gradient(135deg,rgba(0,0,0,.8) 0%, rgba(0,0,0,.3) 50%), url("assets/friday.jpg") no-repeat center center; 
+}
