@@ -7,12 +7,11 @@
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	    <script src="https://use.fontawesome.com/08e2600aff.js"></script>
 	    <!-- Magnific Popup core CSS file -->
-		<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+		<link rel="stylesheet" href="magnific-popup.css">
 		<!-- Magnific Popup core JS file -->
-		<script src="magnific-popup/jquery.magnific-popup.js"></script>
+		<script src="jquery.magnific-popup.js"></script>
 	    <link href='style.css' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
-
 	    <script src="app.js"></script>
 	</head>
 	<body>
@@ -33,31 +32,49 @@
 			<div class="jumbotron">
 				<h1>American Bento</h1>
 				<p>Bringing homecooked meals to the Global Teaching Fellows of Tokyo International University.</p>
-				<div class="button"><a href='#test-form' class="btn-medium popup-with-form" >Order</a></div>
-					<form id="test-form" class="white-popup-block mfp-hide" _lpchecked="1">
-						<h1>Form</h1>
-						<fieldset style="border:0;">
-							<ol>
-								<li>
-									<label for="name">Name</label>
-									<input id="name" name="name" type="text" placeholder="Name" required="">
-								</li>
-								<li>
-									<label for="email">Email</label>
-									<input id="email" name="email" type="email" placeholder="example@domain.com" required="">
-								</li>
-								<li>
-									<label for="phone">Phone</label>
-									<input id="phone" name="phone" type="tel" placeholder="Eg. +447500000000" required="">
-								</li>
-								<li>
-									<label for="textarea">Textarea</label><br>
-									<textarea id="textarea">Try to resize me to see how popup CSS-based resizing works.</textarea>
-								</li>
-							</ol>
-						</fieldset>
-					</form>
-  			</div>
+				<a href='#test-form' class="btn-medium" data-toggle="modal" data-target="#orderPopup" >Order</a>
+					<!-- Modal -->
+					<div id="orderPopup" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+
+					    <!-- Modal content-->
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal">&times;</button>
+					        <h4 class="modal-title">Place Order</h4>
+					      </div>
+					      <div class="modal-body">
+					        <!--Form-->
+					        <div class="container">
+					        	<div class="form-group">
+								  <label for="usr">Full Name:</label>
+								  <input type="text" class="form-control" id="name">
+								</div>
+								<div class="checkbox">
+								  <label><input type="checkbox" value="">Monday's Meal</label>
+								</div>
+								<div class="checkbox">
+								  <label><input type="checkbox" value="">Wednesday's Meal</label>
+								</div>
+								<div class="checkbox disabled">
+								  <label><input type="checkbox" value="">Friday's meal</label>
+								</div>
+								<div class="form-group">
+								  <label for="comment">Comment:</label>
+								  <textarea class="form-control" rows="5" id="comment"></textarea>
+								</div>
+					        </div>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-default">Submit</button>
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+
+					  </div>
+					</div>
+			</div>	
+					
   		
 		
 			<div class="feature">
